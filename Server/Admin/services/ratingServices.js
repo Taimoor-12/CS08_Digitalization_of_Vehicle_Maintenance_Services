@@ -1,0 +1,1 @@
+const checkAuth = require("../middlewares/check-auth");
