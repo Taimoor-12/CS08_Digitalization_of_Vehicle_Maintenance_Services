@@ -27,10 +27,15 @@ function AdminHome(props) {
 
   const itemList = [
     {
-      text: "HOME",
+      text: "Home",
       icon: <HomeIcon />,
       onClick: () => history.push("/superUser_home"),
     },
+    // {
+    //   text: "Cars",
+    //   icon: <HomeIcon />,
+    //   onClick: () => history.push("/superUser_home/Cars"),
+    // },
     
     {
       text: "Blogs",

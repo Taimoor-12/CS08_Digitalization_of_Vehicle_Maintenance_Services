@@ -48,8 +48,8 @@ function Services() {
     },
     { title: "NAME", field: "name" ,  validate: rowData => Boolean(!rowData.name)? 'Name cannot be empty' : '', },
     { title: "PRICE", field: "price", validate: rowData => Boolean(!rowData.price)? 'Price cannot be empty' : '',   },
-    { title: "DESCRIPTION", field: "description", validate: rowData => Boolean(!rowData.description)? 'Price cannot be empty' : '',  },
-    { title: "TIME", field: "timeRequired", validate: rowData => Boolean(!rowData.timeRequired)? 'Price cannot be empty' : '',  },
+    { title: "DESCRIPTION", field: "description", validate: rowData => Boolean(!rowData.description)? 'Description cannot be empty' : '',  },
+    { title: "TIME", field: "timeRequired", validate: rowData => Boolean(!rowData.timeRequired)? 'Time Required cannot be empty' : '',  },
     { title: "WHERE", field: "where", lookup: dynamicWhereLookUp },
   ]);
 

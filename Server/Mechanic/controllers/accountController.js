@@ -81,11 +81,6 @@ exports.updateServiceProvider = async (req, res) => {
 
   let providerDetails = await MemberModel.findById(id)
 
-
-
-  
-
-
   MemberModel.updateMany({ _id: id }, { $set: req.body })
     .exec()
     .then((response) => {

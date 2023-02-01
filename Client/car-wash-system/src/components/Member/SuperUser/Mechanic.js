@@ -180,6 +180,8 @@ function Mechanic() {
     { title: "Lastname", field: "lastname" },
     { title: "Email", field: "email" },
     { title: "Mobile", field: "mobile" },
+    { title: "Address", field: "address" },
+    { title: "CNIC", field: "cnic" },
     { title: "Status", field: "status" },
     //{ title: 'Image', field: 'image', render: item => <img src={item.image} alt="" border="3" height="100" width="100" />},
   
@@ -243,7 +245,9 @@ function Mechanic() {
         newData.email,
         newData.mobile,
         newData.status,
-        newData.verify
+        newData.verify,
+        newData.address,
+        newData.cnic
       
       )
         .then((res) => {

@@ -173,33 +173,33 @@ function Mechanic() {
     { title: "Email", field: "email" },
     { title: "Mobile", field: "mobile" },
     { title: "Status", field: "status" },
-    //{ title: 'Image', field: 'image', render: item => <img src={item.image} alt="" border="3" height="100" width="100" />},
+    { title: 'Image', field: 'image', render: item => <img src={item.image} alt="" border="3" height="100" width="100" />},
   
-    {title: 'images', field: 'image',
-      render: rowData =>
-      <img src={rowData.image} alt={rowData.description} style={{ width: 100 }} />
-     /* <div
-      onMouseEnter={() => setZoom(true)}
-      onMouseLeave={() => setZoom(false)}
-      style={{
-        width: 200,
-        height: 200,
-        position: 'relative',
-        overflow: 'hidden'
-      }}
-    >
-      <img
-        src={rowData.image}
-        alt=""
-        style={{
-          width: zoom ? 400 : 200,
-          height: zoom ? 400 : 200,
-          position: 'absolute',
-          transform: `translate(${zoom ? -100 : 0}%, ${zoom ? -100 : 0}%)`
-        }}
-      />
-    </div>*/
-  }
+  //   {title: 'images', field: 'image',
+  //     render: rowData =>
+  //     <img src={rowData.image} alt={rowData.description} style={{ width: 100 }} />
+  //    /* <div
+  //     onMouseEnter={() => setZoom(true)}
+  //     onMouseLeave={() => setZoom(false)}
+  //     style={{
+  //       width: 200,
+  //       height: 200,
+  //       position: 'relative',
+  //       overflow: 'hidden'
+  //     }}
+  //   >
+  //     <img
+  //       src={rowData.image}
+  //       alt=""
+  //       style={{
+  //         width: zoom ? 400 : 200,
+  //         height: zoom ? 400 : 200,
+  //         position: 'absolute',
+  //         transform: `translate(${zoom ? -100 : 0}%, ${zoom ? -100 : 0}%)`
+  //       }}
+  //     />
+  //   </div>*/
+  // }
 
   ]);
   

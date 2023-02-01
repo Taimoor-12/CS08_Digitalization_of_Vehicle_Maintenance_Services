@@ -51,7 +51,7 @@ exports.findAll = (req, res) => {
 exports.findAllServiceProviders = (req, res) => {
   const serviceProviderId = req.body.serviceProviderId;
   Member.find({role:"ADMIN"})
-  .select("firstname lastname email mobile status image verify" )
+  .select("firstname lastname email mobile status image verify address cnic" )
     .exec()
     .then((response) => {
       if (response.length == 0) {

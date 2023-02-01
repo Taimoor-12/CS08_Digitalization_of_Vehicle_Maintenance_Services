@@ -43,7 +43,7 @@ class MechanicService {
     lastname,
     email,
     mobile,
-    status,
+    status
    
   ) {
     return axios
@@ -109,13 +109,15 @@ class MechanicService {
     email,
     mobile,
     status,
-    verify
+    verify,
+    address,
+    cnic
    
   ) {
     return axios
       .put(
         ACC_URL + `updateServiceProvider/${id}`,
-        { id, firstname,lastname, email, mobile, status, verify },
+        { id, firstname,lastname, email, mobile, status, verify, address, cnic },
         {
           headers: authHeader(),
         }
