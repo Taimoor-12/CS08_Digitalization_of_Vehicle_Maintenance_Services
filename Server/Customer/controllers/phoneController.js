@@ -7,7 +7,7 @@ const otpGenerator=require('otp-generator');
 const authConfig = require("../config/authConfig");
 
 const accountSid = 'AC27a14bc84564d3e77c4f94d0794baa1b'
-const authToken = '0359ae14cc5e24411bf7a330066c246c'
+const authToken = 'fe40d4a9622d1f67ec42055b642349f8'
 const client = require('twilio')(accountSid, authToken);
 
 exports.registerPhone = async(req, res) => {
